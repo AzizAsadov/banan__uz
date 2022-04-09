@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="{% url 'home' %}" class="link">
+                    <img src="{% static 'image/logo.png' %}" alt="">
+                    <h2>ANAN.UZ</h2>
+                </a>    
+            </div>
+            <div class="categories">
+                <ul>
+                    {% for category in categories %}
+                        <li><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+                <div class="search">
+                    <input type="search">
+                    <button>Qidirmoq</button>
+                
+            </div>
+        </div>
+        <div class="header-bottom">
+            <ul>
+                <h2>Hududlar</h2>
+                {% for province in provinces %}
+                    <li><a href="{{ province.get_absolute_url }}"></a>{{ province.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+
+</body>
+</html>

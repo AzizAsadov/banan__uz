@@ -1,0 +1,94 @@
+body{
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+header{
+    padding-bottom: 5px;
+    border-bottom: wheat 1px solid;
+    box-shadow: 0 5px 10px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 70px;
+    height: auto;
+}
+.logo h2{
+    padding-top: 13px;
+    margin-left: -15px;
+    color: rgb(215, 253, 0);
+}
+.categories ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+.categories{
+    width: 40%;
+}
+.categories ul li{
+    color: wheat;
+    list-style: none;
+}
+.header-bottom{
+    width: 100%;
+    padding-top: 20px;
+    /* background: #E2A300; */
+}
+.header-bottom h2{
+    width: 130px;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 50px;
+    margin: -13px 0px 0 -15px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: cyan;
+
+}
+.header-bottom ul{
+    display: flex;
+    justify-content: space-around;
+}
+.header-bottom ul li{
+    color: wheat;
+    list-style: none;
+}
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.search{
+    padding-top: 5px;
+}
+.search input{
+    width: 180px;
+    height: 35px;
+    background: #2C2C2C;
+    color: cyan;
+    border: white 1px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0px 2px 13px rgb(226 158 0 / 48%);
+}
+.search button{
+    width: 100px;
+    height: 35px;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #ea0e4b 95.53%);
+    box-shadow: 0px 2px 13px rgb(226 158 0 / 48%);
+    border-radius: 10px;
+}
+.search button:hover{
+    background: linear-gradient(87.32deg, #ea0e4b 4.47%, #E2A300  95.53%);
+}
